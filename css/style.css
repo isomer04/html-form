@@ -1,103 +1,79 @@
 body {
-    background-color: steelblue;
-    background-color: indianred;
-    background-image: url("../images/background.gif");
-    background-size: cover;
+    background-color: white;
+    color: black;
+    font-family: 'Roboto Serif', sans-serif;
 
-    color: rgb(10, 10, 10);
-    font-size: 20;
-    font-family: 'Supermercado One', cursive;
-}
-
-
-.container h1{
-    text-align: center;
 }
 
 .container {
-    background-color: rgba(228, 242, 228, 0.9);
-    padding: 15px;
-    border: 5px solid #ccc;
-    width: 60%; 
-    max-width: 600px;
-    margin: 10% auto;
-    /* text-align: center; */
-    /* align-content: center; */
-}
-
-.frmReg{
-    margin-top: 35px;
-    margin: auto;
-    width: 400px;
-    animation: fadeIn 2s;
-
-
-}
-
-.frmReg div{
-    margin: 25px;
-
-}
-
-.frmReg label{
-    width: 120px;
-    display: inline-block;
-}
-
-.frmReg button {
-    padding: 4px 12px;
-}
-
-#btnSubmit{
-    background-color: darkgreen;
-    color: white;
-    font-size: 1.1em
+    display: flex;
+    flex-direction: row wrap;
+    justify-content: center;
 }
 
 
-#btnCancel{
-    background-color: white;
-    color: darkred;
-    font-size: 1.1em
-}
-
-input, button {
-    font-family: 'Supermercado One', cursive;
-
-}
-
-input {
-    font-size: 1em;
-}
-
-button {
+.container div {
+    background-color: #f1f1f1;
     margin: 10px;
+    padding: 20px;
+    flex: 1;
 }
 
-.submission {
-    text-align: right;
+.container div img {
+    object-fit:cover;
+    width: 100%;
+    height: 200px;
 }
 
-@keyframes fadeIN{
-    from{ opacity: 0;}
-    to{
-        opacity: 1;
-    }
+.addingExtra {
+    margin: 2% 0;
+    text-align: center;
 }
 
+/* secondSection1 {
+    width: 50%;
+}
+
+secondSection2 {
+    width: 30%;
+} */
+
+.firstImage {
+    width: 90%;;
+    height: 300px;
+    object-fit: cover;
 
 
-@media screen and (max-width: 630px) {
-    .frmReg label {
-        width: 95%;
+}
 
-    }
-
-    .submission {
-        text-align: left;
-    }
+.button a{
+    background-color: #ffbc0d;
+    border-radius: 5px;
+    padding: 2% 4%;
+    text-decoration: none;
+    color: black
     
 }
 
+.footer {
+    background-color: rgb(68, 68, 68);
+    height: 100px;
+    text-align: center;
+}
+
+.footer p {
+    padding: 3%;
+    color: white;
+}
 
 
+
+/* secondImage {
+    width: 80%;
+} */
+
+@media screen and (max-width:780px){
+    .container{
+        flex-direction: column;
+    }    
+}
